@@ -1,0 +1,51 @@
+@media screen and (max-width: 870px) {
+    main {
+        width: 95%;
+        padding: 50px 2px;
+    }
+
+    .modal-content{
+        width: 80%;
+    }
+
+    
+    .modal-content #save{
+        padding: 6px 12px;
+        height: 40px;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    .header-title{
+        font-size: 1.3rem;
+    }
+
+    main #createProduct{
+        padding: 3px 8px;
+    }
+
+    button.green, button.red {
+        height: 25px;
+        font-size: .8rem;
+        padding: 6px;
+        margin: 3px 5px;
+    }
+
+    .records th {
+        padding-left: 5px;
+        font-size: .55rem;
+        height: 40px;
+    }
+
+    .records td {
+        font-size: .65rem;
+        padding-left: 0px;
+        padding-right: 4px;
+    }
+
+    .records th:last-child,
+    .records td:last-child{
+        min-width: 2.5rem;
+    }
+}
