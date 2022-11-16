@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const login = require('./api/login');
 const getProducts = require('./api/getProducts');
 const getProductById = require('./api/getProductById');
 const createProduct = require('./api/createProduct');
@@ -20,7 +21,7 @@ app.use(
 app.get('/', (request, response) => {
   response.json({ info: 'Node.js, Express, and Postgres API' });
 });
-
+app.get('/login', login);
 app.get('/products', getProducts);
 app.get('/products/:id', getProductById);
 app.post('/products', createProduct);

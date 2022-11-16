@@ -10,13 +10,13 @@
     transition: box-shadow .6s ease;
 }
 
-.button.blue{
-    background-color: #52c5ff;
+.button.yellow{
+    background-color: #d6fd13;
     
 }
 
 button.green{
-    background-color: #2de982;
+    background-color: #1bf643;
 }
 
 button.red{

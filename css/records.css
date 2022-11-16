@@ -2,6 +2,7 @@
     width: 100%;
     user-select: none;
     text-align: left;
+    background-color: var(--secundary-color);
 }
 
 .records th{
@@ -14,6 +15,7 @@
 .records td{
     height: 50px;
     padding-left: 20px;
+    color: var(--text-color);
 }
 
 .records th:last-child,
@@ -24,5 +26,5 @@
 }
 
 .records tr:hover{
-    background-color: var(--secundary-color);
+    background-color: var(--hover-color);
 }

@@ -10,7 +10,7 @@ export default async function postData() {
                 Accept: 'application/json',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ product, brand, price, amount })
+            body: JSON.stringify({ product, brand, price, amount})
         });
     } catch (erro) {
         console.error(erro);

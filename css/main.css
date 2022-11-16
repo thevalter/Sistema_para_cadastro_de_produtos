@@ -1,42 +1,45 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --primary-color: #1a3337;
-    --secundary-color: #eef0f2;
-    --shadow-color: #CCC;
-    --text-color: #FFF;
+:root {
+    --primary-color: #171919;
+    --secundary-color: #207285;
+    --hover-color: #1e515c;
+    --shadow-color: #96bfe4;
+    --text-color: #ffffff;
 }
 
-body{
+.container-main {
     min-height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     font-family: 'karla', sans-serif;
-    position:relative;
+    position: relative;
     overflow-x: hidden;
+    background-color: var(--secundary-color);
 }
 
-header{
+header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
     height: 70px;
+    padding: 0 2rem;
     background-color: var(--primary-color);
     line-height: 70px;
     box-shadow: 0 1px 2px var(--shadow-color);
 }
 
-.header-title{
+.header-title {
     color: #ffffff;
     font-size: 2rem;
 }
 
-main{
+main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -44,18 +47,68 @@ main{
     width: 90%;
     margin: 5vh auto;
     padding: 50px;
-    box-shadow: 2px 2px 10px var(--shadow-color);
+    box-shadow: 1px 1px 4px var(--shadow-color);
     gap: 20px;
+    background-color: var(--secundary-color);
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width:100%;
+    width: 100%;
     height: 70px;
-    background-color: var(--secundary-color);
+    background-color: var(--primary-color);
     font-weight: 200;
     font-style: italic;
     padding: 20px;
+    color: var(--text-color);
+}
+
+/* login page*/
+
+.login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.login div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 25%;
+}
+
+.login input {
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 100%;
+}
+
+.login input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.login button{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    padding: .5rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login button:hover{
+    opacity: .8;
+}
+
+#close-session{
+    margin-left: 35%;
 }

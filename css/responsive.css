@@ -49,3 +49,26 @@
         min-width: 2.5rem;
     }
 }
+
+@media screen and (max-width: 410px) {
+    .header-title{
+        font-size: 1rem;
+    }
+
+    .records th {
+        padding-left: 3px;
+        font-size: .5rem;
+        height: 40px;
+    }
+
+    .records td {
+        font-size: .6rem;
+        padding-left: 0px;
+        padding-right: 4px;
+    }
+
+    .records th:last-child,
+    .records td:last-child{
+        min-width: 2.2rem;
+    }
+}

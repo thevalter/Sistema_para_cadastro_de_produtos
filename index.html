@@ -14,52 +14,65 @@
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/main.js" type="module" defer></script>
+    <script src="js/login.js" defer></script>
     <title>Gerenciador de Produtos</title>
 </head>
 
 <body>
-    <header>
-        <h1 class="header-title">Gerencidor de Produtos</h1>
-    </header>
-    <main>
-        <button type="button" class="button blue mobile" id="createProduct">Cadastrar Produtos</button>
-        <table id="tableProducts" class="records">
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Produto</th>
-                    <th>Marca</th>
-                    <th>Preço</th>
-                    <th>Quantidade</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
-        <div class="modal" id="modal">
-            <div class="modal-content">
-                <header class="modal-header">
-                    <h2>Novo Produto</h2>
-                    <span class="modal-close" id="modalClose">&#10006;</span>
-                </header>
-                <form id="form" class="modal-form">
-                    <input type="text" id="product" data-index="new" class="modal-field" placeholder="Nome do Produto"
-                        required>
-                    <input type="text" id="brand" class="modal-field" placeholder="Marca do Produto" required>
-                    <input type="number" id="price" class="modal-field" placeholder="Preço do Produto" required>
-                    <input type="text" id="amount" class="modal-field" placeholder="Quantidade Disponivel" required>
-                </form>
-                <footer class="modal-footer">
-                    <button id="save" class="button green">Salvar</button>
-                    <button id="cancel" class="button blue">Cancelar</button>
-                </footer>
-            </div>
+     <div class="login">
+        <div>
+            <label for="nome">Usuario:</label>
+            <input type="text" name="" id="nome">
+            <label for="senha">Senha:</label>
+            <input type="text" name="" id="senha">
+            <button id="submit">Entrar</button>
         </div>
-    </main>
-    <footer>
-        Copyright &copy; All rights reserved.
-    </footer>
+    </div>
+    <div class="container-main">
+        <header>
+            <h1 class="header-title">Painel de controle</h1>
+            <button class="button red" id="close-session">Sair</button>
+        </header>
+        <main>
+            <button type="button" class="button yellow mobile" id="createProduct">Novo Produto</button>
+            <table id="tableProducts" class="records">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Produto</th>
+                        <th>Marca</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                </tbody>
+            </table>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2>Novo Produto</h2>
+                        <span class="modal-close" id="modalClose">&#10006;</span>
+                    </header>
+                    <form id="form" class="modal-form">
+                        <input type="text" id="product" data-index="new" class="modal-field" placeholder="Nome do Produto"
+                            required>
+                        <input type="text" id="brand" class="modal-field" placeholder="Marca do Produto" required>
+                        <input type="number" id="price" class="modal-field" placeholder="Preço do Produto" required>
+                        <input type="text" id="amount" class="modal-field" placeholder="Quantidade Disponivel" required>
+                    </form>
+                    <footer class="modal-footer">
+                        <button id="save" class="button green">Salvar</button>
+                        <button id="cancel" class="button red">Cancelar</button>
+                    </footer>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Copyright &copy; All rights reserved.
+        </footer>
+    </div>
 </body>
 
 </html>
