@@ -65,3 +65,4 @@ document.querySelector('#tableProducts>tbody')
             closeModalAndRefresh();
         }
     });
+
